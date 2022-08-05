@@ -7,7 +7,7 @@ const findUserByEmail = (email) => users.find(u => u.email === email)
 
 // get all users
 usersRouter.get("/", (req, res) => {
-    res.status(201).json({
+    res.status(200).json({
       users: users
     })
 })
